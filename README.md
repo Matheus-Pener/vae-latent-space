@@ -4,7 +4,7 @@ Este projeto tem como objetivo explorar o comportamento de **Variational Autoenc
 
 ---
 
-## 📌 Objetivos do Projeto
+##  Objetivos do Projeto
 
 - **Treinar modelos VAEs** em dois datasets rotulados distintos.
 - **Ajustar a melhor topologia** do modelo com base na função de custo e conjunto de validação.
@@ -13,7 +13,7 @@ Este projeto tem como objetivo explorar o comportamento de **Variational Autoenc
 
 ---
 
-## 📂 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```bash
 vae-latent-space/
@@ -37,14 +37,14 @@ vae-latent-space/
 
 ---
 
-## 📊 Datasets Utilizados
+##  Datasets Utilizados
 
-### 1️⃣ Wine Dataset
+###  Wine Dataset
 - **Conjunto de dados pequeno** (*178 amostras*).
 - **Classificação de vinhos** baseada em características químicas.
 - **Tarefa:** Classificação multi-classe.
 
-### 2️⃣ Boston Housing Dataset
+###  Boston Housing Dataset
 - **Conjunto de dados de preços de casas** (*506 amostras*).
 - **Predição do valor dos imóveis** com base em fatores socioeconômicos e estruturais.
 - **Tarefa:** Regressão.
@@ -110,7 +110,7 @@ As projeções são feitas utilizando **PCA**, reduzindo a dimensionalidade para
 
 ##  Questões Investigadas e Resultados
 
-### 1️⃣ Há formação de clusters no espaço latente?
+###  Há formação de clusters no espaço latente?
 **Não.** O coeficiente de silhueta foi negativo para ambos os datasets, indicando que os pontos não formam agrupamentos bem definidos.
 
 - **Wine Dataset:** Silhueta = -0.37 (Distribuição difusa)
@@ -118,12 +118,12 @@ As projeções são feitas utilizando **PCA**, reduzindo a dimensionalidade para
 
 ---
 
-### 2️⃣ Os rótulos estão bem separados no espaço latente?
+###  Os rótulos estão bem separados no espaço latente?
 **Não.** Como esperado a partir dos valores da silhueta, os rótulos não apresentaram separação clara no espaço latente.
 
 ---
 
-### 3️⃣ A projeção 2D ilustra quanto da variância dos dados originais?
+###  A projeção 2D ilustra quanto da variância dos dados originais?
 **Sim!** A redução de dimensionalidade para 2D preservou **99% da variância dos dados** em ambos os casos.
 Isto é, os gráficos gerados representam bem o espaço latente original.
 
