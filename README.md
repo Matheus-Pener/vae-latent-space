@@ -1,4 +1,4 @@
-# 🔥 VAE Latent Space Exploration 🔥
+# VAE Latent Space Exploration 
 
 Este projeto tem como objetivo explorar o comportamento de **Variational Autoencoders (VAEs)** em diferentes **datasets rotulados**, analisando a organização dos dados no **espaço latente** e sua relação com os rótulos originais.
 
@@ -39,19 +39,19 @@ vae-latent-space/
 
 ## 📊 Datasets Utilizados
 
-### 📌 1️⃣ Wine Dataset
+### 1️⃣ Wine Dataset
 - **Conjunto de dados pequeno** (*178 amostras*).
 - **Classificação de vinhos** baseada em características químicas.
 - **Tarefa:** Classificação multi-classe.
 
-### 📌 2️⃣ Boston Housing Dataset
+### 2️⃣ Boston Housing Dataset
 - **Conjunto de dados de preços de casas** (*506 amostras*).
 - **Predição do valor dos imóveis** com base em fatores socioeconômicos e estruturais.
 - **Tarefa:** Regressão.
 
 ---
 
-## 🏗️ Estrutura do Modelo VAE
+##  Estrutura do Modelo VAE
 
 Os VAEs implementados seguem a seguinte estrutura:
 
@@ -70,7 +70,7 @@ Os VAEs implementados seguem a seguinte estrutura:
 
 ---
 
-## 🚀 Treinamento dos Modelos
+## Treinamento dos Modelos
 
 Os modelos podem ser treinados separadamente para cada dataset:
 
@@ -86,7 +86,7 @@ Os pesos finais são salvos na pasta **models/**.
 
 ---
 
-## 🔍 Visualização do Espaço Latente
+## Visualização do Espaço Latente
 
 Após o treinamento, podemos gerar gráficos da projeção 2D do espaço latente:
 
